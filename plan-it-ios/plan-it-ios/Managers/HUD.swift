@@ -15,14 +15,17 @@ class HUD {
     }
     
     static func hide() {
+        PIHaptic.success()
         SVProgressHUD.dismiss()
     }
     
     static func showSuccess(_ message: String) {
+        PIHaptic.success()
         SVProgressHUD.showSuccess(withStatus: message)
     }
     
     static func showError(_ message: String) {
+        PIHaptic.error()
         SVProgressHUD.showError(withStatus: message)
     }
 }

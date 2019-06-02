@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280622FF22A42B860065788E /* ViewControllerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280622FE22A42B860065788E /* ViewControllerEx.swift */; };
+		2806230122A42CD30065788E /* Haptica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806230022A42CD30065788E /* Haptica.swift */; };
+		2806230322A42EFB0065788E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806230222A42EFB0065788E /* APIManager.swift */; };
+		2806230622A43B5E0065788E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806230522A43B5E0065788E /* Task.swift */; };
+		2806230822A43C3A0065788E /* EncodableEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806230722A43C3A0065788E /* EncodableEx.swift */; };
+		2806230B22A44E070065788E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806230A22A44E070065788E /* HomeTableViewCell.swift */; };
+		2806230D22A456110065788E /* DateEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806230C22A456110065788E /* DateEx.swift */; };
 		2817A1D922A3E7BF00C8FF31 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2817A1D822A3E7BF00C8FF31 /* RootViewController.storyboard */; };
 		2817A1DB22A3E7CC00C8FF31 /* RootViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1DA22A3E7CC00C8FF31 /* RootViewHandler.swift */; };
 		2817A1DD22A3E7D800C8FF31 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1DC22A3E7D800C8FF31 /* RootInteractor.swift */; };
@@ -35,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280622FE22A42B860065788E /* ViewControllerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEx.swift; sourceTree = "<group>"; };
+		2806230022A42CD30065788E /* Haptica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptica.swift; sourceTree = "<group>"; };
+		2806230222A42EFB0065788E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		2806230522A43B5E0065788E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		2806230722A43C3A0065788E /* EncodableEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableEx.swift; sourceTree = "<group>"; };
+		2806230A22A44E070065788E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		2806230C22A456110065788E /* DateEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEx.swift; sourceTree = "<group>"; };
 		2817A1D822A3E7BF00C8FF31 /* RootViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
 		2817A1DA22A3E7CC00C8FF31 /* RootViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewHandler.swift; sourceTree = "<group>"; };
 		2817A1DC22A3E7D800C8FF31 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
@@ -78,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280622FD22A42B760065788E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				280622FE22A42B860065788E /* ViewControllerEx.swift */,
+				2806230722A43C3A0065788E /* EncodableEx.swift */,
+				2806230C22A456110065788E /* DateEx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2806230922A44DFB0065788E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2806230A22A44E070065788E /* HomeTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		2817A1D722A3E7AD00C8FF31 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				2817A1E322A3EFB300C8FF31 /* HUD.swift */,
+				2806230022A42CD30065788E /* Haptica.swift */,
+				2806230222A42EFB0065788E /* APIManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -117,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				2817A1E622A3F24100C8FF31 /* Constants.swift */,
+				2806230522A43B5E0065788E /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,6 +167,7 @@
 		2817A1F622A4071200C8FF31 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2806230922A44DFB0065788E /* Cell */,
 				2817A1EB22A4039C00C8FF31 /* Interactor */,
 				2817A1EE22A403B900C8FF31 /* HomeViewHandler.swift */,
 				2817A1F022A403C600C8FF31 /* HomeViewController.swift */,
@@ -188,6 +224,7 @@
 		28A8FA2022A2CECC00693DD8 /* plan-it-ios */ = {
 			isa = PBXGroup;
 			children = (
+				280622FD22A42B760065788E /* Extensions */,
 				2817A1E522A3F22C00C8FF31 /* Models */,
 				2817A1E222A3EFA900C8FF31 /* Managers */,
 				28A8FA3522A3DFF900693DD8 /* Scenes */,
@@ -204,9 +241,9 @@
 			isa = PBXGroup;
 			children = (
 				2817A1F722A41EAF00C8FF31 /* Settings */,
-				2817A1D722A3E7AD00C8FF31 /* Root */,
 				28A8FA3922A3E06300693DD8 /* Main */,
 				28A8FA3622A3E00600693DD8 /* Auth */,
+				2817A1D722A3E7AD00C8FF31 /* Root */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -375,13 +412,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2806230822A43C3A0065788E /* EncodableEx.swift in Sources */,
 				2817A1DD22A3E7D800C8FF31 /* RootInteractor.swift in Sources */,
 				2817A1F522A4070900C8FF31 /* MainViewController.swift in Sources */,
+				2806230322A42EFB0065788E /* APIManager.swift in Sources */,
 				2817A1DB22A3E7CC00C8FF31 /* RootViewHandler.swift in Sources */,
 				28A8FA3B22A3E0D800693DD8 /* SignUpViewHandler.swift in Sources */,
 				2817A1FD22A41EFB00C8FF31 /* SettingsViewHandler.swift in Sources */,
+				280622FF22A42B860065788E /* ViewControllerEx.swift in Sources */,
 				2817A1ED22A403B000C8FF31 /* HomeInteractor.swift in Sources */,
 				2817A1DF22A3E7EA00C8FF31 /* RootViewController.swift in Sources */,
+				2806230D22A456110065788E /* DateEx.swift in Sources */,
 				2817A1EF22A403B900C8FF31 /* HomeViewHandler.swift in Sources */,
 				28A8FA2422A2CECC00693DD8 /* SignUpViewController.swift in Sources */,
 				2817A1E722A3F24100C8FF31 /* Constants.swift in Sources */,
@@ -389,8 +430,11 @@
 				2817A20422A4234500C8FF31 /* SettingsTableViewCell.swift in Sources */,
 				2817A1E422A3EFB300C8FF31 /* HUD.swift in Sources */,
 				28A8FA3D22A3E0EB00693DD8 /* SignUpInteractor.swift in Sources */,
+				2806230B22A44E070065788E /* HomeTableViewCell.swift in Sources */,
 				28A8FA2222A2CECC00693DD8 /* AppDelegate.swift in Sources */,
+				2806230122A42CD30065788E /* Haptica.swift in Sources */,
 				2817A1F122A403C600C8FF31 /* HomeViewController.swift in Sources */,
+				2806230622A43B5E0065788E /* Task.swift in Sources */,
 				2817A20022A41F1200C8FF31 /* SettingsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

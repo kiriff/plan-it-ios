@@ -25,16 +25,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="637"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dY0-nZ-tzH">
-                                                <rect key="frame" x="15" y="10" width="345" height="120"/>
+                                                <rect key="frame" x="15" y="10" width="308" height="120"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wll-oT-d3f">
-                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="308" height="60"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3t-EL-b2y">
-                                                        <rect key="frame" x="0.0" y="60" width="345" height="60"/>
+                                                        <rect key="frame" x="0.0" y="60" width="308" height="60"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -74,14 +74,25 @@
                                                     <outlet property="delegate" destination="5Fv-Nc-ioY" id="r6C-fi-Onm"/>
                                                 </connections>
                                             </tableView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbg-yQ-7Rf">
+                                                <rect key="frame" x="323" y="48" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Ndr-Ro-mHj"/>
+                                                    <constraint firstAttribute="width" constant="44" id="yAJ-jy-FU5"/>
+                                                </constraints>
+                                                <state key="normal" image="s-edit"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="pbg-yQ-7Rf" firstAttribute="leading" secondItem="dY0-nZ-tzH" secondAttribute="trailing" id="1WH-Oj-ZRz"/>
+                                            <constraint firstAttribute="trailing" secondItem="pbg-yQ-7Rf" secondAttribute="trailing" constant="8" id="5D7-wC-GPB"/>
                                             <constraint firstAttribute="bottom" secondItem="rax-ca-oGh" secondAttribute="bottom" id="GFY-kl-XOo"/>
                                             <constraint firstItem="rax-ca-oGh" firstAttribute="leading" secondItem="z5v-YJ-ycj" secondAttribute="leading" id="H8e-fk-ac7"/>
-                                            <constraint firstAttribute="trailing" secondItem="dY0-nZ-tzH" secondAttribute="trailing" constant="15" id="UXr-tF-inf"/>
+                                            <constraint firstItem="pbg-yQ-7Rf" firstAttribute="leading" secondItem="dY0-nZ-tzH" secondAttribute="trailing" id="HDV-2g-qgx"/>
                                             <constraint firstItem="dY0-nZ-tzH" firstAttribute="leading" secondItem="z5v-YJ-ycj" secondAttribute="leading" constant="15" id="k13-b6-UB0"/>
                                             <constraint firstItem="rax-ca-oGh" firstAttribute="top" secondItem="dY0-nZ-tzH" secondAttribute="bottom" constant="8" id="opA-kH-bs4"/>
+                                            <constraint firstItem="pbg-yQ-7Rf" firstAttribute="centerY" secondItem="dY0-nZ-tzH" secondAttribute="centerY" id="sQS-Id-TLu"/>
                                             <constraint firstItem="dY0-nZ-tzH" firstAttribute="top" secondItem="z5v-YJ-ycj" secondAttribute="top" constant="10" id="uAB-Kh-miC"/>
                                             <constraint firstAttribute="trailing" secondItem="rax-ca-oGh" secondAttribute="trailing" id="uHQ-Fp-4YG"/>
                                         </constraints>
@@ -114,6 +125,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EtQ-VW-hv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="6uH-mG-hY3" customClass="SettingsViewHandler" customModule="plan_it_ios" customModuleProvider="target">
                     <connections>
+                        <outlet property="editButton" destination="pbg-yQ-7Rf" id="mwk-W7-J3V"/>
                         <outlet property="emailTextField" destination="e3t-EL-b2y" id="Ltl-iI-9kY"/>
                         <outlet property="nickTextField" destination="Wll-oT-d3f" id="Awt-j7-PRT"/>
                         <outlet property="tableView" destination="rax-ca-oGh" id="5WE-Q2-vFb"/>
@@ -123,4 +135,7 @@
             <point key="canvasLocation" x="2344.8000000000002" y="-437.63118440779613"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="s-edit" width="25" height="25"/>
+    </resources>
 </document>

@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingsInteractor: NSObject {
     public let cellID = "settingsCell"
     public var settingsTitles = ["Reset password",
                                  "Sing out"]
+    
+    public func logOut() {
+        try! Auth.auth().signOut()
+    }
 }

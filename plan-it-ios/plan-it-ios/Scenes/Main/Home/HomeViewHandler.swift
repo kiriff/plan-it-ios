@@ -9,4 +9,5 @@ import UIKit
 
 class HomeViewHandler: NSObject {
 
+    @IBOutlet weak var tableView: UITableView!
 }

@@ -8,5 +8,15 @@
 import UIKit
 
 class HomeInteractor: NSObject {
-
+    
+    let cellID = "taskCell"
+    var tasks: [Task] = []
+    
+    func getTasks(completion: @escaping () -> ()) {
+        APIManager.shared.getListTasks { (tasks) in
+            self.tasks = tasks
+            completion()
+        }
+    }
+    
 }

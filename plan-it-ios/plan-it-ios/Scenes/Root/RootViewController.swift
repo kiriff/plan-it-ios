@@ -28,6 +28,7 @@ class RootViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+        PIHaptic.light()
         self.viewHandler.loginButton.hero.id = "auth.title.label"
         let vc = SignUpViewController.storyboardController(.login)
         vc.hero.isEnabled = true
@@ -37,6 +38,7 @@ class RootViewController: UIViewController {
     }
     
     @IBAction func singUpButtonPressed(_ sender: UIButton) {
+        PIHaptic.light()
         self.viewHandler.signUpButton.hero.id = "auth.title.label"
         let vc = SignUpViewController.storyboardController(.signUp)
         vc.hero.isEnabled = true

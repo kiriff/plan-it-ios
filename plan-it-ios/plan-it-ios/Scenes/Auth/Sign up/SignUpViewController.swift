@@ -37,6 +37,7 @@ class SignUpViewController: UIViewController {
 
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         HUD.show()
+        PIHaptic.light()
         if let email = self.viewHandler.emailTextField.text, let password = self.viewHandler.passTextField.text {
             self.interactor.authorizeUser(email: email, password: password, successHandler: { [weak self] in
                 guard let self = self else { return }
@@ -53,6 +54,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         self.view.endEditing(true)
+        PIHaptic.light()
         self.dismiss(animated: true, completion: nil)
     }
 }
