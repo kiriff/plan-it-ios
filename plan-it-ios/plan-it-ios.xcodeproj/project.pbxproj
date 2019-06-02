@@ -11,6 +11,13 @@
 		2817A1DB22A3E7CC00C8FF31 /* RootViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1DA22A3E7CC00C8FF31 /* RootViewHandler.swift */; };
 		2817A1DD22A3E7D800C8FF31 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1DC22A3E7D800C8FF31 /* RootInteractor.swift */; };
 		2817A1DF22A3E7EA00C8FF31 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1DE22A3E7EA00C8FF31 /* RootViewController.swift */; };
+		2817A1E422A3EFB300C8FF31 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1E322A3EFB300C8FF31 /* HUD.swift */; };
+		2817A1E722A3F24100C8FF31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1E622A3F24100C8FF31 /* Constants.swift */; };
+		2817A1ED22A403B000C8FF31 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1EC22A403B000C8FF31 /* HomeInteractor.swift */; };
+		2817A1EF22A403B900C8FF31 /* HomeViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1EE22A403B900C8FF31 /* HomeViewHandler.swift */; };
+		2817A1F122A403C600C8FF31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1F022A403C600C8FF31 /* HomeViewController.swift */; };
+		2817A1F322A403E600C8FF31 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2817A1F222A403E600C8FF31 /* MainViewController.storyboard */; };
+		2817A1F522A4070900C8FF31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1F422A4070900C8FF31 /* MainViewController.swift */; };
 		28A8FA2222A2CECC00693DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA2122A2CECC00693DD8 /* AppDelegate.swift */; };
 		28A8FA2422A2CECC00693DD8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA2322A2CECC00693DD8 /* SignUpViewController.swift */; };
 		28A8FA2722A2CECC00693DD8 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A8FA2522A2CECC00693DD8 /* SignUpViewController.storyboard */; };
@@ -27,6 +34,13 @@
 		2817A1DA22A3E7CC00C8FF31 /* RootViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewHandler.swift; sourceTree = "<group>"; };
 		2817A1DC22A3E7D800C8FF31 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		2817A1DE22A3E7EA00C8FF31 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2817A1E322A3EFB300C8FF31 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		2817A1E622A3F24100C8FF31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2817A1EC22A403B000C8FF31 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		2817A1EE22A403B900C8FF31 /* HomeViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewHandler.swift; sourceTree = "<group>"; };
+		2817A1F022A403C600C8FF31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2817A1F222A403E600C8FF31 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		2817A1F422A4070900C8FF31 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		28A8FA1E22A2CECC00693DD8 /* plan-it-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plan-it-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A8FA2122A2CECC00693DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28A8FA2322A2CECC00693DD8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +95,40 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		2817A1E222A3EFA900C8FF31 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2817A1E322A3EFB300C8FF31 /* HUD.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2817A1E522A3F22C00C8FF31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2817A1E622A3F24100C8FF31 /* Constants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2817A1EB22A4039C00C8FF31 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2817A1EC22A403B000C8FF31 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2817A1F622A4071200C8FF31 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2817A1EB22A4039C00C8FF31 /* Interactor */,
+				2817A1EE22A403B900C8FF31 /* HomeViewHandler.swift */,
+				2817A1F022A403C600C8FF31 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		28A8FA1522A2CECC00693DD8 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +150,8 @@
 		28A8FA2022A2CECC00693DD8 /* plan-it-ios */ = {
 			isa = PBXGroup;
 			children = (
+				2817A1E522A3F22C00C8FF31 /* Models */,
+				2817A1E222A3EFA900C8FF31 /* Managers */,
 				28A8FA3522A3DFF900693DD8 /* Scenes */,
 				28A8FA2122A2CECC00693DD8 /* AppDelegate.swift */,
 				28A8FA2822A2CECE00693DD8 /* Assets.xcassets */,
@@ -116,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				2817A1D722A3E7AD00C8FF31 /* Root */,
-				28A8FA3922A3E06300693DD8 /* Home */,
+				28A8FA3922A3E06300693DD8 /* Main */,
 				28A8FA3622A3E00600693DD8 /* Auth */,
 			);
 			path = Scenes;
@@ -126,16 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				28A8FA3822A3E01900693DD8 /* Sign up */,
-				28A8FA3722A3E01200693DD8 /* Login */,
 			);
 			path = Auth;
-			sourceTree = "<group>";
-		};
-		28A8FA3722A3E01200693DD8 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		28A8FA3822A3E01900693DD8 /* Sign up */ = {
@@ -149,11 +191,14 @@
 			path = "Sign up";
 			sourceTree = "<group>";
 		};
-		28A8FA3922A3E06300693DD8 /* Home */ = {
+		28A8FA3922A3E06300693DD8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2817A1F622A4071200C8FF31 /* Home */,
+				2817A1F422A4070900C8FF31 /* MainViewController.swift */,
+				2817A1F222A403E600C8FF31 /* MainViewController.storyboard */,
 			);
-			path = Home;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		B952DC46F7EB417A345398BE /* Pods */ = {
@@ -234,6 +279,7 @@
 			files = (
 				28A8FA2C22A2CECE00693DD8 /* LaunchScreen.storyboard in Resources */,
 				28A8FA3422A2D73D00693DD8 /* GoogleService-Info.plist in Resources */,
+				2817A1F322A403E600C8FF31 /* MainViewController.storyboard in Resources */,
 				28A8FA2922A2CECE00693DD8 /* Assets.xcassets in Resources */,
 				2817A1D922A3E7BF00C8FF31 /* RootViewController.storyboard in Resources */,
 				28A8FA2722A2CECC00693DD8 /* SignUpViewController.storyboard in Resources */,
@@ -290,12 +336,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2817A1DD22A3E7D800C8FF31 /* RootInteractor.swift in Sources */,
+				2817A1F522A4070900C8FF31 /* MainViewController.swift in Sources */,
 				2817A1DB22A3E7CC00C8FF31 /* RootViewHandler.swift in Sources */,
 				28A8FA3B22A3E0D800693DD8 /* SignUpViewHandler.swift in Sources */,
+				2817A1ED22A403B000C8FF31 /* HomeInteractor.swift in Sources */,
 				2817A1DF22A3E7EA00C8FF31 /* RootViewController.swift in Sources */,
+				2817A1EF22A403B900C8FF31 /* HomeViewHandler.swift in Sources */,
 				28A8FA2422A2CECC00693DD8 /* SignUpViewController.swift in Sources */,
+				2817A1E722A3F24100C8FF31 /* Constants.swift in Sources */,
+				2817A1E422A3EFB300C8FF31 /* HUD.swift in Sources */,
 				28A8FA3D22A3E0EB00693DD8 /* SignUpInteractor.swift in Sources */,
 				28A8FA2222A2CECC00693DD8 /* AppDelegate.swift in Sources */,
+				2817A1F122A403C600C8FF31 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
