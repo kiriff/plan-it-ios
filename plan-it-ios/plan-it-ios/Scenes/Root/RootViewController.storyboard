@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qSF-hg-meb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="joD-n8-l5t">
+            <objects>
+                <viewController id="qSF-hg-meb" customClass="RootViewController" customModule="plan_it_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DAr-Ve-yTv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COU-so-lkM">
+                                <rect key="frame" x="10" y="562" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Hg3-Ir-xXS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="singUpButtonPressed:" destination="qSF-hg-meb" eventType="touchUpInside" id="lxV-6w-Xfd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KE9-Uk-sv7">
+                                <rect key="frame" x="10" y="507" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="5Ph-p3-JIa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="qSF-hg-meb" eventType="touchUpInside" id="PeY-lr-Fo4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="COU-so-lkM" firstAttribute="centerX" secondItem="DAr-Ve-yTv" secondAttribute="centerX" id="67j-7c-E0g"/>
+                            <constraint firstItem="COU-so-lkM" firstAttribute="leading" secondItem="pbK-lo-haO" secondAttribute="leading" constant="10" id="7Hv-UL-b2s"/>
+                            <constraint firstItem="pbK-lo-haO" firstAttribute="trailing" secondItem="COU-so-lkM" secondAttribute="trailing" constant="10" id="Lh7-PD-Mb1"/>
+                            <constraint firstItem="KE9-Uk-sv7" firstAttribute="leading" secondItem="pbK-lo-haO" secondAttribute="leading" constant="10" id="STr-QC-RSF"/>
+                            <constraint firstItem="COU-so-lkM" firstAttribute="top" secondItem="KE9-Uk-sv7" secondAttribute="bottom" constant="10" id="jQv-MN-9AP"/>
+                            <constraint firstItem="KE9-Uk-sv7" firstAttribute="centerX" secondItem="DAr-Ve-yTv" secondAttribute="centerX" id="u8W-5t-8b5"/>
+                            <constraint firstItem="pbK-lo-haO" firstAttribute="bottom" secondItem="COU-so-lkM" secondAttribute="bottom" constant="60" id="un7-Of-62D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pbK-lo-haO"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="viewHandler" destination="pGE-xh-fut" id="R45-CB-NeW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqw-4b-EE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="pGE-xh-fut" customClass="RootViewHandler" customModule="plan_it_ios" customModuleProvider="target">
+                    <connections>
+                        <outlet property="loginButton" destination="KE9-Uk-sv7" id="bJP-7L-Ywo"/>
+                        <outlet property="signUpButton" destination="COU-so-lkM" id="sJe-Wg-08z"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="110" y="-92"/>
+        </scene>
+    </scenes>
+</document>

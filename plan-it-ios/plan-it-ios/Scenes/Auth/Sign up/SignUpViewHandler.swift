@@ -6,7 +6,14 @@
 //
 
 import UIKit
+import Hero
 
 class SignUpViewHandler: NSObject {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passTextField: UITextField!
+    
+    func setupTextField() {
+        emailTextField.becomeFirstResponder()
+    }
 }

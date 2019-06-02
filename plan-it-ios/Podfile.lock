@@ -20,6 +20,7 @@ PODS:
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
     - GoogleUtilities/UserDefaults (~> 6.0)
+  - GCCalendar (2.5.0)
   - GoogleAppMeasurement (6.0.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -44,14 +45,25 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.1.0):
     - GoogleUtilities/Logger
+  - Haptica (3.0.0)
+  - Hero (1.4.0)
+  - IQKeyboardManagerSwift (6.3.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - SPStorkController (1.6.5)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Firebase/Core
+  - GCCalendar
+  - Haptica
+  - Hero
+  - IQKeyboardManagerSwift
+  - SPStorkController
+  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -59,19 +71,31 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseInstanceID
+    - GCCalendar
     - GoogleAppMeasurement
     - GoogleUtilities
+    - Haptica
+    - Hero
+    - IQKeyboardManagerSwift
     - nanopb
+    - SPStorkController
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Firebase: 8d77bb33624ae9b62d745d82ec023de5f70f7e4f
   FirebaseAnalytics: 629301c2b9925f3537d4093a17a72751ae5b7084
   FirebaseCore: 66bdef3b310a026880e2a5bc8aa586ab62ce4543
   FirebaseInstanceID: 27bed93a59b6685f5c3e0c028a878a764fd75c33
+  GCCalendar: 88978ad35e25e26725dcb9372fc3b091362d78eb
   GoogleAppMeasurement: 51d8d9ea48f0ca44484d29cfbdef976fbd4fc336
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
+  Haptica: ee4abaf262f456fe3854b493f506debe421ddf2c
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  SPStorkController: f74a60dbcd3c35180c996688873f6eadac839642
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: cb11524dd2afcb6b8301def0724064a5ec251b0e
+PODFILE CHECKSUM: aa12d5991485ea304b832169834289c8cbcf8811
 
 COCOAPODS: 1.7.0
