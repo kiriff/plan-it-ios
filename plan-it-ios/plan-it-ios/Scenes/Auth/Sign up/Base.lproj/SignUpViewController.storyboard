@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="plan_it_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="login" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="83d-cH-WEs">
+                                <rect key="frame" x="10" y="103" width="355" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pHn-Hh-hMA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ibw-tE-tIs">
+                                <rect key="frame" x="10" y="163" width="355" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Tv4-wr-e9h"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDg-dz-srF">
+                                <rect key="frame" x="305" y="20" width="70" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="73J-Ir-eUK"/>
+                                    <constraint firstAttribute="width" constant="70" id="zXr-SH-a0m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jsv-Xv-6hZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLk-N6-1Pw">
+                                <rect key="frame" x="0.0" y="20" width="70" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5UM-9s-gW4"/>
+                                    <constraint firstAttribute="width" constant="70" id="oSs-tM-6hx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nya-9R-3Ns"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlS-Gd-UII">
+                                <rect key="frame" x="150.5" y="27" width="74" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="auth.title.label"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cDg-dz-srF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3sg-Rg-mby"/>
+                            <constraint firstItem="ibw-tE-tIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Mf-G3-kwk"/>
+                            <constraint firstItem="83d-cH-WEs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6df-RD-J2H"/>
+                            <constraint firstItem="ibw-tE-tIs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="AFK-Dd-yTB"/>
+                            <constraint firstItem="LLk-N6-1Pw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ddu-RU-zeh"/>
+                            <constraint firstItem="LLk-N6-1Pw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JEH-4b-MnO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cDg-dz-srF" secondAttribute="trailing" id="Lks-uZ-C5c"/>
+                            <constraint firstItem="WlS-Gd-UII" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="agL-Of-EW1"/>
+                            <constraint firstItem="83d-cH-WEs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="iiT-6s-pBb"/>
+                            <constraint firstItem="ibw-tE-tIs" firstAttribute="top" secondItem="83d-cH-WEs" secondAttribute="bottom" constant="20" id="kSk-VQ-43q"/>
+                            <constraint firstItem="83d-cH-WEs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="leQ-PR-Mdf"/>
+                            <constraint firstItem="WlS-Gd-UII" firstAttribute="centerY" secondItem="LLk-N6-1Pw" secondAttribute="centerY" id="lgQ-Qc-10O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="viewHandler" destination="JIA-cU-cwj" id="SUn-zb-2LE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="JIA-cU-cwj" customClass="SignUpViewHandler" customModule="plan_it_ios" customModuleProvider="target">
+                    <connections>
+                        <outlet property="emailTextField" destination="83d-cH-WEs" id="gv1-xZ-na4"/>
+                        <outlet property="passTextField" destination="ibw-tE-tIs" id="GPQ-ix-ILf"/>
+                        <outlet property="titleLabel" destination="WlS-Gd-UII" id="lBv-Xz-37e"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="39.130434782608695"/>
+        </scene>
+    </scenes>
+</document>
