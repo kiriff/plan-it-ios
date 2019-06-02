@@ -3,28 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		28A8FA2222A2CECC00693DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA2122A2CECC00693DD8 /* AppDelegate.swift */; };
-		28A8FA2422A2CECC00693DD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA2322A2CECC00693DD8 /* ViewController.swift */; };
-		28A8FA2722A2CECC00693DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A8FA2522A2CECC00693DD8 /* Main.storyboard */; };
+		28A8FA2422A2CECC00693DD8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA2322A2CECC00693DD8 /* SignUpViewController.swift */; };
+		28A8FA2722A2CECC00693DD8 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A8FA2522A2CECC00693DD8 /* SignUpViewController.storyboard */; };
 		28A8FA2922A2CECE00693DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A8FA2822A2CECE00693DD8 /* Assets.xcassets */; };
 		28A8FA2C22A2CECE00693DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A8FA2A22A2CECE00693DD8 /* LaunchScreen.storyboard */; };
 		28A8FA3422A2D73D00693DD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28A8FA3322A2D73D00693DD8 /* GoogleService-Info.plist */; };
+		28A8FA3B22A3E0D800693DD8 /* SignUpViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA3A22A3E0D800693DD8 /* SignUpViewHandler.swift */; };
+		28A8FA3D22A3E0EB00693DD8 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA3C22A3E0EB00693DD8 /* SignUpInteractor.swift */; };
 		45DAEFAE911E1316149DF270 /* Pods_plan_it_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE46B2E1C30E9ADF012345D /* Pods_plan_it_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28A8FA1E22A2CECC00693DD8 /* plan-it-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plan-it-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A8FA2122A2CECC00693DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28A8FA2322A2CECC00693DD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28A8FA2622A2CECC00693DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28A8FA2322A2CECC00693DD8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		28A8FA2622A2CECC00693DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignUpViewController.storyboard; sourceTree = "<group>"; };
 		28A8FA2822A2CECE00693DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28A8FA2B22A2CECE00693DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A8FA2D22A2CECE00693DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28A8FA3322A2D73D00693DD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		28A8FA3A22A3E0D800693DD8 /* SignUpViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewHandler.swift; sourceTree = "<group>"; };
+		28A8FA3C22A3E0EB00693DD8 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
 		4F31F16127E2CE97D2F7C316 /* Pods-plan-it-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plan-it-ios.release.xcconfig"; path = "Target Support Files/Pods-plan-it-ios/Pods-plan-it-ios.release.xcconfig"; sourceTree = "<group>"; };
 		5EE46B2E1C30E9ADF012345D /* Pods_plan_it_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plan_it_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0CEBFD9F9EE34BDCC3BED5 /* Pods-plan-it-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plan-it-ios.debug.xcconfig"; path = "Target Support Files/Pods-plan-it-ios/Pods-plan-it-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,9 +67,8 @@
 		28A8FA2022A2CECC00693DD8 /* plan-it-ios */ = {
 			isa = PBXGroup;
 			children = (
+				28A8FA3522A3DFF900693DD8 /* Scenes */,
 				28A8FA2122A2CECC00693DD8 /* AppDelegate.swift */,
-				28A8FA2322A2CECC00693DD8 /* ViewController.swift */,
-				28A8FA2522A2CECC00693DD8 /* Main.storyboard */,
 				28A8FA2822A2CECE00693DD8 /* Assets.xcassets */,
 				28A8FA2A22A2CECE00693DD8 /* LaunchScreen.storyboard */,
 				28A8FA2D22A2CECE00693DD8 /* Info.plist */,
@@ -74,13 +77,55 @@
 			path = "plan-it-ios";
 			sourceTree = "<group>";
 		};
+		28A8FA3522A3DFF900693DD8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				28A8FA3922A3E06300693DD8 /* Home */,
+				28A8FA3622A3E00600693DD8 /* Auth */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		28A8FA3622A3E00600693DD8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				28A8FA3822A3E01900693DD8 /* Sign up */,
+				28A8FA3722A3E01200693DD8 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		28A8FA3722A3E01200693DD8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		28A8FA3822A3E01900693DD8 /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				28A8FA2322A2CECC00693DD8 /* SignUpViewController.swift */,
+				28A8FA2522A2CECC00693DD8 /* SignUpViewController.storyboard */,
+				28A8FA3A22A3E0D800693DD8 /* SignUpViewHandler.swift */,
+				28A8FA3C22A3E0EB00693DD8 /* SignUpInteractor.swift */,
+			);
+			path = "Sign up";
+			sourceTree = "<group>";
+		};
+		28A8FA3922A3E06300693DD8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		B952DC46F7EB417A345398BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				6F0CEBFD9F9EE34BDCC3BED5 /* Pods-plan-it-ios.debug.xcconfig */,
 				4F31F16127E2CE97D2F7C316 /* Pods-plan-it-ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,7 +199,7 @@
 				28A8FA2C22A2CECE00693DD8 /* LaunchScreen.storyboard in Resources */,
 				28A8FA3422A2D73D00693DD8 /* GoogleService-Info.plist in Resources */,
 				28A8FA2922A2CECE00693DD8 /* Assets.xcassets in Resources */,
-				28A8FA2722A2CECC00693DD8 /* Main.storyboard in Resources */,
+				28A8FA2722A2CECC00693DD8 /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +252,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A8FA2422A2CECC00693DD8 /* ViewController.swift in Sources */,
+				28A8FA3B22A3E0D800693DD8 /* SignUpViewHandler.swift in Sources */,
+				28A8FA2422A2CECC00693DD8 /* SignUpViewController.swift in Sources */,
+				28A8FA3D22A3E0EB00693DD8 /* SignUpInteractor.swift in Sources */,
 				28A8FA2222A2CECC00693DD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,12 +262,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		28A8FA2522A2CECC00693DD8 /* Main.storyboard */ = {
+		28A8FA2522A2CECC00693DD8 /* SignUpViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				28A8FA2622A2CECC00693DD8 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SignUpViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		28A8FA2A22A2CECE00693DD8 /* LaunchScreen.storyboard */ = {
