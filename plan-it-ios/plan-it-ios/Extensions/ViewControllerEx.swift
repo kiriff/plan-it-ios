@@ -25,3 +25,19 @@ extension UIViewController {
         return height
     }
 }
+
+extension UIView {
+    func rounded() {
+        self.layer.cornerRadius = self.frame.height / 2
+    }
+    
+    func makeShadow() {
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
+        self.layer.shadowOpacity = 1
+        self.layer.shadowOffset = CGSize(width: 2, height: 6)
+        self.layer.shadowRadius = 5
+        self.layer.shouldRasterize = true
+        self.layer.rasterizationScale = UIScreen.main.scale
+    }
+}

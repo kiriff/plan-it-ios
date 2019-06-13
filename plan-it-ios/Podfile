@@ -16,5 +16,6 @@ target 'plan-it-ios' do
   pod 'Haptica'
   pod 'Hero'
   pod 'SVProgressHUD'
+  pod 'FSCalendar'
 
 end

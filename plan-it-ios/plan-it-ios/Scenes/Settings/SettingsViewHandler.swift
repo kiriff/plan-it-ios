@@ -6,11 +6,18 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingsViewHandler: NSObject {
 
-    @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var nickTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    
+    func setUserInfo() {
+        if let user = Auth.auth().currentUser {
+            emailTextField.text = user.email
+            nickTextField.text = user.uid
+        }
+    }
 }

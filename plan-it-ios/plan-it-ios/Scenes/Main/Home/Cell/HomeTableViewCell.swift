@@ -21,9 +21,9 @@ class HomeTableViewCell: UITableViewCell {
         descriptionLabel.text = task.description
         if let days = task.daysLeft() {
             switch days {
-            case 1: self.deadlineLabel.text = "tomorrow"
-            case 0: self.deadlineLabel.text = "today"
-            case 0...: self.deadlineLabel.text = "\(days) days"
+            case 1: self.deadlineLabel.text = "tomorrow"; self.deadlineLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8974743151)
+            case 0: self.deadlineLabel.text = "today"; self.deadlineLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8974743151)
+            case 0...: self.deadlineLabel.text = "\(days) days"; self.deadlineLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8974743151)
             case ..<0: self.deadlineLabel.text = "\(days) days"; self.deadlineLabel.textColor = #colorLiteral(red: 0.7595406975, green: 0, blue: 0.2313725501, alpha: 1)
             default:
                 break
@@ -41,17 +41,27 @@ class HomeTableViewCell: UITableViewCell {
         if let category = task.category {
             setCategory(category)
         }
+        
+        if task.completed {
+            complteButton.alpha = 1
+            self.deadlineLabel.text = "Completed!"
+        } else {
+            complteButton.alpha = 0.2
+        }
     }
 
     private func setPriority(_ priority: Priority) {
         priorityLabel.text = " \(priority.name) "
-        priorityLabel.backgroundColor = #colorLiteral(red: 0.7595406975, green: 0, blue: 0.2313725501, alpha: 1)
+        priorityLabel.backgroundColor = UIColor(hexString: priority.colorHex)
         priorityLabel.textColor = .white
-        priorityLabel.layer.cornerRadius = priorityLabel.frame.height / 2
+        priorityLabel.rounded()
     }
     
     func setCategory(_ category: Category) {
-//        categoryLabel.text = category.name
-        categoryLabel.layer.cornerRadius = categoryLabel.frame.height / 2
+        categoryLabel.text = " \(category.name) "
+        categoryLabel.rounded()
+    }
+    @IBAction func completeButtonPressed(_ sender: UIButton) {
     }
 }
+

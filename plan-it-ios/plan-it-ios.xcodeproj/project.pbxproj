@@ -30,6 +30,13 @@
 		2817A1FD22A41EFB00C8FF31 /* SettingsViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1FC22A41EFB00C8FF31 /* SettingsViewHandler.swift */; };
 		2817A20022A41F1200C8FF31 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1FF22A41F1200C8FF31 /* SettingsInteractor.swift */; };
 		2817A20422A4234500C8FF31 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A20322A4234500C8FF31 /* SettingsTableViewCell.swift */; };
+		288E8C5D22A7AA1D00E32B5B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E8C5C22A7AA1D00E32B5B /* CalendarViewController.swift */; };
+		288E8C6022A7AD7B00E32B5B /* TaskDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288E8C5F22A7AD7B00E32B5B /* TaskDetailsViewController.storyboard */; };
+		288E8C6222A7AD9600E32B5B /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E8C6122A7AD9600E32B5B /* TaskDetailsViewController.swift */; };
+		288E8C6522A7AFAB00E32B5B /* PriorityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E8C6422A7AFAB00E32B5B /* PriorityListViewController.swift */; };
+		288E8C6722A7AFB700E32B5B /* PriorityListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288E8C6622A7AFB700E32B5B /* PriorityListViewController.storyboard */; };
+		288E8C6A22A7B04C00E32B5B /* PriorityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E8C6922A7B04C00E32B5B /* PriorityTableViewCell.swift */; };
+		288E8C6C22A7B2BD00E32B5B /* TaskDetailsViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E8C6B22A7B2BD00E32B5B /* TaskDetailsViewHandler.swift */; };
 		28A8FA2222A2CECC00693DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA2122A2CECC00693DD8 /* AppDelegate.swift */; };
 		28A8FA2422A2CECC00693DD8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA2322A2CECC00693DD8 /* SignUpViewController.swift */; };
 		28A8FA2722A2CECC00693DD8 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A8FA2522A2CECC00693DD8 /* SignUpViewController.storyboard */; };
@@ -38,6 +45,9 @@
 		28A8FA3422A2D73D00693DD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28A8FA3322A2D73D00693DD8 /* GoogleService-Info.plist */; };
 		28A8FA3B22A3E0D800693DD8 /* SignUpViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA3A22A3E0D800693DD8 /* SignUpViewHandler.swift */; };
 		28A8FA3D22A3E0EB00693DD8 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FA3C22A3E0EB00693DD8 /* SignUpInteractor.swift */; };
+		28E7D10D22B2ED2700FC4653 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7D10C22B2ED2700FC4653 /* CategoryListViewController.swift */; };
+		28E7D10F22B2ED3600FC4653 /* CategoryListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E7D10E22B2ED3600FC4653 /* CategoryListViewController.storyboard */; };
+		28E7D11222B2ED5800FC4653 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7D11122B2ED5800FC4653 /* CategoryTableViewCell.swift */; };
 		45DAEFAE911E1316149DF270 /* Pods_plan_it_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE46B2E1C30E9ADF012345D /* Pods_plan_it_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +75,13 @@
 		2817A1FC22A41EFB00C8FF31 /* SettingsViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewHandler.swift; sourceTree = "<group>"; };
 		2817A1FF22A41F1200C8FF31 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		2817A20322A4234500C8FF31 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		288E8C5C22A7AA1D00E32B5B /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		288E8C5F22A7AD7B00E32B5B /* TaskDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskDetailsViewController.storyboard; sourceTree = "<group>"; };
+		288E8C6122A7AD9600E32B5B /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
+		288E8C6422A7AFAB00E32B5B /* PriorityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityListViewController.swift; sourceTree = "<group>"; };
+		288E8C6622A7AFB700E32B5B /* PriorityListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PriorityListViewController.storyboard; sourceTree = "<group>"; };
+		288E8C6922A7B04C00E32B5B /* PriorityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityTableViewCell.swift; sourceTree = "<group>"; };
+		288E8C6B22A7B2BD00E32B5B /* TaskDetailsViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewHandler.swift; sourceTree = "<group>"; };
 		28A8FA1E22A2CECC00693DD8 /* plan-it-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plan-it-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A8FA2122A2CECC00693DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28A8FA2322A2CECC00693DD8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +92,9 @@
 		28A8FA3322A2D73D00693DD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		28A8FA3A22A3E0D800693DD8 /* SignUpViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewHandler.swift; sourceTree = "<group>"; };
 		28A8FA3C22A3E0EB00693DD8 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		28E7D10C22B2ED2700FC4653 /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		28E7D10E22B2ED3600FC4653 /* CategoryListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryListViewController.storyboard; sourceTree = "<group>"; };
+		28E7D11122B2ED5800FC4653 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		4F31F16127E2CE97D2F7C316 /* Pods-plan-it-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plan-it-ios.release.xcconfig"; path = "Target Support Files/Pods-plan-it-ios/Pods-plan-it-ios.release.xcconfig"; sourceTree = "<group>"; };
 		5EE46B2E1C30E9ADF012345D /* Pods_plan_it_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plan_it_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0CEBFD9F9EE34BDCC3BED5 /* Pods-plan-it-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plan-it-ios.debug.xcconfig"; path = "Target Support Files/Pods-plan-it-ios/Pods-plan-it-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +223,42 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		288E8C5922A7A9D400E32B5B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				288E8C5C22A7AA1D00E32B5B /* CalendarViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		288E8C5E22A7AD6200E32B5B /* Task details */ = {
+			isa = PBXGroup;
+			children = (
+				288E8C5F22A7AD7B00E32B5B /* TaskDetailsViewController.storyboard */,
+				288E8C6122A7AD9600E32B5B /* TaskDetailsViewController.swift */,
+				288E8C6B22A7B2BD00E32B5B /* TaskDetailsViewHandler.swift */,
+			);
+			path = "Task details";
+			sourceTree = "<group>";
+		};
+		288E8C6322A7AF9300E32B5B /* List priorities */ = {
+			isa = PBXGroup;
+			children = (
+				288E8C6822A7B03600E32B5B /* Cell */,
+				288E8C6422A7AFAB00E32B5B /* PriorityListViewController.swift */,
+				288E8C6622A7AFB700E32B5B /* PriorityListViewController.storyboard */,
+			);
+			path = "List priorities";
+			sourceTree = "<group>";
+		};
+		288E8C6822A7B03600E32B5B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				288E8C6922A7B04C00E32B5B /* PriorityTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		28A8FA1522A2CECC00693DD8 = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +296,9 @@
 		28A8FA3522A3DFF900693DD8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				28E7D10B22B2ED0800FC4653 /* List categories */,
+				288E8C6322A7AF9300E32B5B /* List priorities */,
+				288E8C5E22A7AD6200E32B5B /* Task details */,
 				2817A1F722A41EAF00C8FF31 /* Settings */,
 				28A8FA3922A3E06300693DD8 /* Main */,
 				28A8FA3622A3E00600693DD8 /* Auth */,
@@ -270,11 +329,30 @@
 		28A8FA3922A3E06300693DD8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				288E8C5922A7A9D400E32B5B /* Calendar */,
 				2817A1F622A4071200C8FF31 /* Home */,
 				2817A1F422A4070900C8FF31 /* MainViewController.swift */,
 				2817A1F222A403E600C8FF31 /* MainViewController.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		28E7D10B22B2ED0800FC4653 /* List categories */ = {
+			isa = PBXGroup;
+			children = (
+				28E7D11022B2ED3D00FC4653 /* Cell */,
+				28E7D10C22B2ED2700FC4653 /* CategoryListViewController.swift */,
+				28E7D10E22B2ED3600FC4653 /* CategoryListViewController.storyboard */,
+			);
+			path = "List categories";
+			sourceTree = "<group>";
+		};
+		28E7D11022B2ED3D00FC4653 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				28E7D11122B2ED5800FC4653 /* CategoryTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		B952DC46F7EB417A345398BE /* Pods */ = {
@@ -356,7 +434,10 @@
 				2817A1F922A41EC500C8FF31 /* SettingsViewController.storyboard in Resources */,
 				28A8FA2C22A2CECE00693DD8 /* LaunchScreen.storyboard in Resources */,
 				28A8FA3422A2D73D00693DD8 /* GoogleService-Info.plist in Resources */,
+				28E7D10F22B2ED3600FC4653 /* CategoryListViewController.storyboard in Resources */,
+				288E8C6022A7AD7B00E32B5B /* TaskDetailsViewController.storyboard in Resources */,
 				2817A1F322A403E600C8FF31 /* MainViewController.storyboard in Resources */,
+				288E8C6722A7AFB700E32B5B /* PriorityListViewController.storyboard in Resources */,
 				28A8FA2922A2CECE00693DD8 /* Assets.xcassets in Resources */,
 				2817A1D922A3E7BF00C8FF31 /* RootViewController.storyboard in Resources */,
 				28A8FA2722A2CECC00693DD8 /* SignUpViewController.storyboard in Resources */,
@@ -416,8 +497,11 @@
 				2817A1DD22A3E7D800C8FF31 /* RootInteractor.swift in Sources */,
 				2817A1F522A4070900C8FF31 /* MainViewController.swift in Sources */,
 				2806230322A42EFB0065788E /* APIManager.swift in Sources */,
+				288E8C6222A7AD9600E32B5B /* TaskDetailsViewController.swift in Sources */,
 				2817A1DB22A3E7CC00C8FF31 /* RootViewHandler.swift in Sources */,
+				288E8C5D22A7AA1D00E32B5B /* CalendarViewController.swift in Sources */,
 				28A8FA3B22A3E0D800693DD8 /* SignUpViewHandler.swift in Sources */,
+				288E8C6522A7AFAB00E32B5B /* PriorityListViewController.swift in Sources */,
 				2817A1FD22A41EFB00C8FF31 /* SettingsViewHandler.swift in Sources */,
 				280622FF22A42B860065788E /* ViewControllerEx.swift in Sources */,
 				2817A1ED22A403B000C8FF31 /* HomeInteractor.swift in Sources */,
@@ -428,8 +512,12 @@
 				2817A1E722A3F24100C8FF31 /* Constants.swift in Sources */,
 				2817A1FB22A41EDF00C8FF31 /* SettingsViewController.swift in Sources */,
 				2817A20422A4234500C8FF31 /* SettingsTableViewCell.swift in Sources */,
+				288E8C6A22A7B04C00E32B5B /* PriorityTableViewCell.swift in Sources */,
+				28E7D10D22B2ED2700FC4653 /* CategoryListViewController.swift in Sources */,
 				2817A1E422A3EFB300C8FF31 /* HUD.swift in Sources */,
+				28E7D11222B2ED5800FC4653 /* CategoryTableViewCell.swift in Sources */,
 				28A8FA3D22A3E0EB00693DD8 /* SignUpInteractor.swift in Sources */,
+				288E8C6C22A7B2BD00E32B5B /* TaskDetailsViewHandler.swift in Sources */,
 				2806230B22A44E070065788E /* HomeTableViewCell.swift in Sources */,
 				28A8FA2222A2CECC00693DD8 /* AppDelegate.swift in Sources */,
 				2806230122A42CD30065788E /* Haptica.swift in Sources */,

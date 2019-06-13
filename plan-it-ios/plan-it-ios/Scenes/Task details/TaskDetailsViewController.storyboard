@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fL8-hb-wZ1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Task Details View Controller-->
+        <scene sceneID="ojy-Vt-gdw">
+            <objects>
+                <viewController id="fL8-hb-wZ1" customClass="TaskDetailsViewController" customModule="plan_it_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eMC-2y-r4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCd-yD-khK">
+                                <rect key="frame" x="0.0" y="80" width="375" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uDP-aC-0QL">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un3-Hc-nhs">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <state key="normal" title="Priority">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="priorityButtonPressed:" destination="fL8-hb-wZ1" eventType="touchUpInside" id="Unq-oS-oyz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7S-2k-N4Y">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <state key="normal" title="Category">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="categoryButtonPressed:" destination="fL8-hb-wZ1" eventType="touchUpInside" id="P4f-8P-sI8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Tz-uw-vPW"/>
+                                    <constraint firstItem="uDP-aC-0QL" firstAttribute="leading" secondItem="DCd-yD-khK" secondAttribute="leading" id="DNm-P1-lYB"/>
+                                    <constraint firstAttribute="bottom" secondItem="uDP-aC-0QL" secondAttribute="bottom" id="SbJ-Eq-1NN"/>
+                                    <constraint firstItem="uDP-aC-0QL" firstAttribute="top" secondItem="DCd-yD-khK" secondAttribute="top" id="g0B-QX-OJe"/>
+                                    <constraint firstAttribute="trailing" secondItem="uDP-aC-0QL" secondAttribute="trailing" id="zV1-h0-yHZ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VVm-b4-YD4">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9e-ir-Owh">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Mark as done">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="markAsDonePressed:" destination="fL8-hb-wZ1" eventType="touchUpInside" id="B0E-Zl-Jnd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efS-v7-7lk">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Select on map">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y60-bJ-lsT">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Delete task">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deletePressed:" destination="fL8-hb-wZ1" eventType="touchUpInside" id="HZS-xW-njF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ZGk-tk-MaF"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D8q-tE-VKp">
+                                <rect key="frame" x="16" y="20" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Sfu-Hz-noN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameDidEnd:" destination="fL8-hb-wZ1" eventType="editingDidEnd" id="wod-8U-iFu"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piW-cp-dTQ">
+                                <rect key="frame" x="16" y="138" width="343" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F7z-Iw-daN">
+                                <rect key="frame" x="16" y="138" width="343" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6XH-nH-828"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-96-Mxb">
+                                <rect key="frame" x="0.0" y="595" width="375" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpz-TT-fTf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="sB0-OK-9Ru"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryY-1U-qtr" customClass="FSCalendar">
+                                <rect key="frame" x="16" y="243" width="343" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ufc-ep-TTB" firstAttribute="trailing" secondItem="F7z-Iw-daN" secondAttribute="trailing" constant="16" id="0Bw-Cu-QMB"/>
+                            <constraint firstItem="VVm-b4-YD4" firstAttribute="top" secondItem="DbB-96-Mxb" secondAttribute="bottom" id="1Jk-oY-gmO"/>
+                            <constraint firstItem="DCd-yD-khK" firstAttribute="top" secondItem="D8q-tE-VKp" secondAttribute="bottom" id="35O-B6-SMv"/>
+                            <constraint firstItem="ryY-1U-qtr" firstAttribute="leading" secondItem="Ufc-ep-TTB" secondAttribute="leading" constant="16" id="3a3-9v-7Fl"/>
+                            <constraint firstItem="D8q-tE-VKp" firstAttribute="leading" secondItem="Ufc-ep-TTB" secondAttribute="leading" constant="16" id="4I7-6f-rox"/>
+                            <constraint firstItem="piW-cp-dTQ" firstAttribute="width" secondItem="F7z-Iw-daN" secondAttribute="width" id="4UY-v9-EI5"/>
+                            <constraint firstItem="DCd-yD-khK" firstAttribute="leading" secondItem="Ufc-ep-TTB" secondAttribute="leading" id="7vV-2J-rfJ"/>
+                            <constraint firstItem="piW-cp-dTQ" firstAttribute="height" secondItem="F7z-Iw-daN" secondAttribute="height" id="Bs4-u8-3ri"/>
+                            <constraint firstItem="piW-cp-dTQ" firstAttribute="centerX" secondItem="F7z-Iw-daN" secondAttribute="centerX" id="DkB-7R-eTv"/>
+                            <constraint firstItem="Ufc-ep-TTB" firstAttribute="trailing" secondItem="DbB-96-Mxb" secondAttribute="trailing" id="HXX-Ye-ciN"/>
+                            <constraint firstItem="F7z-Iw-daN" firstAttribute="leading" secondItem="Ufc-ep-TTB" secondAttribute="leading" constant="16" id="M5e-Bp-c1d"/>
+                            <constraint firstItem="piW-cp-dTQ" firstAttribute="centerY" secondItem="F7z-Iw-daN" secondAttribute="centerY" id="NtF-Q0-av1"/>
+                            <constraint firstItem="DbB-96-Mxb" firstAttribute="top" secondItem="ryY-1U-qtr" secondAttribute="bottom" constant="2" id="blG-fv-rsA"/>
+                            <constraint firstItem="F7z-Iw-daN" firstAttribute="top" secondItem="DCd-yD-khK" secondAttribute="bottom" constant="8" id="fYY-qv-n82"/>
+                            <constraint firstItem="ryY-1U-qtr" firstAttribute="top" secondItem="F7z-Iw-daN" secondAttribute="bottom" constant="5" id="foq-lZ-PJd"/>
+                            <constraint firstItem="VVm-b4-YD4" firstAttribute="leading" secondItem="eMC-2y-r4u" secondAttribute="leading" id="hVv-qe-CEl"/>
+                            <constraint firstItem="D8q-tE-VKp" firstAttribute="top" secondItem="Ufc-ep-TTB" secondAttribute="top" id="hst-3f-dES"/>
+                            <constraint firstItem="Ufc-ep-TTB" firstAttribute="trailing" secondItem="ryY-1U-qtr" secondAttribute="trailing" constant="16" id="j6t-b4-xHu"/>
+                            <constraint firstItem="Ufc-ep-TTB" firstAttribute="trailing" secondItem="VVm-b4-YD4" secondAttribute="trailing" id="keb-yX-5N3"/>
+                            <constraint firstItem="DbB-96-Mxb" firstAttribute="leading" secondItem="Ufc-ep-TTB" secondAttribute="leading" id="nIq-bF-aRy"/>
+                            <constraint firstItem="Ufc-ep-TTB" firstAttribute="trailing" secondItem="D8q-tE-VKp" secondAttribute="trailing" constant="16" id="rX2-FO-iYO"/>
+                            <constraint firstItem="Ufc-ep-TTB" firstAttribute="bottom" secondItem="VVm-b4-YD4" secondAttribute="bottom" id="sbf-ii-rFs"/>
+                            <constraint firstItem="Ufc-ep-TTB" firstAttribute="trailing" secondItem="DCd-yD-khK" secondAttribute="trailing" id="yXb-nf-ACU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ufc-ep-TTB"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewHandler" destination="T7B-QC-GE0" id="HMe-TT-u7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jum-92-uJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="T7B-QC-GE0" customClass="TaskDetailsViewHandler" customModule="plan_it_ios" customModuleProvider="target">
+                    <connections>
+                        <outlet property="addressLabel" destination="Bpz-TT-fTf" id="C2Z-Mw-66P"/>
+                        <outlet property="calendar" destination="ryY-1U-qtr" id="hSR-oA-mgp"/>
+                        <outlet property="categoryButton" destination="s7S-2k-N4Y" id="aC2-n9-0v2"/>
+                        <outlet property="deleteTaskButton" destination="y60-bJ-lsT" id="Dt9-oc-bgk"/>
+                        <outlet property="descriptionTextField" destination="F7z-Iw-daN" id="FmX-6I-deY"/>
+                        <outlet property="markAsDoneButton" destination="R9e-ir-Owh" id="den-Ve-DPI"/>
+                        <outlet property="nameTextField" destination="D8q-tE-VKp" id="je0-O5-jC7"/>
+                        <outlet property="priorityButton" destination="un3-Hc-nhs" id="Nav-YU-HKE"/>
+                        <outlet property="textViewShadowView" destination="piW-cp-dTQ" id="qQ4-Oq-YgN"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="84" y="77.811094452773617"/>
+        </scene>
+    </scenes>
+</document>
