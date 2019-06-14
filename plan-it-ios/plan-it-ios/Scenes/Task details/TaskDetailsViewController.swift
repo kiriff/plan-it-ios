@@ -77,6 +77,15 @@ class TaskDetailsViewController: UIViewController {
         }
         self.storkPresent(vc, swipe: true, height: self.safeAreaHeight - 100)
     }
+    
+    @IBAction func selectOnMapPressed(_ sender: UIButton) {
+        let vc = MapTasksViewController()
+        vc.completion = { [weak self] (address) in
+            self?.task.address = address
+            self?.viewHandler.setupAddress(address)
+        }
+        self.presentAsStork(vc)
+    }
 }
 
 extension TaskDetailsViewController: FSCalendarDelegate {

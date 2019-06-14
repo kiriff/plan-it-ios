@@ -44,6 +44,10 @@ class TaskDetailsViewHandler: NSObject {
         categoryButton.setTitle(category.name, for: .normal)
     }
     
+    func setupAddress(_ address: Address) {
+        addressLabel.text = address.name
+    }
+    
     func initialSetup() {
         textViewShadowView.makeShadow()
         calendar.makeShadow()

@@ -9,15 +9,20 @@ import UIKit
 import Firebase
 import IQKeyboardManagerSwift
 import FirebaseAuth
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    //google maps api key : AIzaSyCFT-vPpvmK0WNmmehWezrPmPe-I_tYtu4
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        GMSServices.provideAPIKey("AIzaSyCFT-vPpvmK0WNmmehWezrPmPe-I_tYtu4")
+        GMSPlacesClient.provideAPIKey("AIzaSyCFT-vPpvmK0WNmmehWezrPmPe-I_tYtu4")
         
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()

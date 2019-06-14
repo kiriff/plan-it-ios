@@ -15,7 +15,6 @@ class HUD {
     }
     
     static func hide() {
-        PIHaptic.success()
         SVProgressHUD.dismiss()
     }
     
