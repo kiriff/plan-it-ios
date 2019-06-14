@@ -14,6 +14,7 @@ class APIManager: NSObject {
     static let shared = APIManager()
     var ref = Database.database().reference()
     
+    public var tasks: [Task] = []
     
     func addTask(_ task: Task) {
         print("add task")
@@ -50,6 +51,7 @@ class APIManager: NSObject {
                         tasksArray.append(task)
                     }
                 }
+                self.tasks = tasksArray
                 successBlock(tasksArray)
             })
         }

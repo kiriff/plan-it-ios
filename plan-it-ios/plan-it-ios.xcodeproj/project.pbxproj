@@ -30,7 +30,7 @@
 		2817A1FD22A41EFB00C8FF31 /* SettingsViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1FC22A41EFB00C8FF31 /* SettingsViewHandler.swift */; };
 		2817A20022A41F1200C8FF31 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A1FF22A41F1200C8FF31 /* SettingsInteractor.swift */; };
 		2817A20422A4234500C8FF31 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817A20322A4234500C8FF31 /* SettingsTableViewCell.swift */; };
-		288E8C5D22A7AA1D00E32B5B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E8C5C22A7AA1D00E32B5B /* CalendarViewController.swift */; };
+		288E8C5D22A7AA1D00E32B5B /* MapTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E8C5C22A7AA1D00E32B5B /* MapTasksViewController.swift */; };
 		288E8C6022A7AD7B00E32B5B /* TaskDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288E8C5F22A7AD7B00E32B5B /* TaskDetailsViewController.storyboard */; };
 		288E8C6222A7AD9600E32B5B /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E8C6122A7AD9600E32B5B /* TaskDetailsViewController.swift */; };
 		288E8C6522A7AFAB00E32B5B /* PriorityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288E8C6422A7AFAB00E32B5B /* PriorityListViewController.swift */; };
@@ -75,7 +75,7 @@
 		2817A1FC22A41EFB00C8FF31 /* SettingsViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewHandler.swift; sourceTree = "<group>"; };
 		2817A1FF22A41F1200C8FF31 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		2817A20322A4234500C8FF31 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
-		288E8C5C22A7AA1D00E32B5B /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		288E8C5C22A7AA1D00E32B5B /* MapTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTasksViewController.swift; sourceTree = "<group>"; };
 		288E8C5F22A7AD7B00E32B5B /* TaskDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskDetailsViewController.storyboard; sourceTree = "<group>"; };
 		288E8C6122A7AD9600E32B5B /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
 		288E8C6422A7AFAB00E32B5B /* PriorityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityListViewController.swift; sourceTree = "<group>"; };
@@ -223,12 +223,12 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		288E8C5922A7A9D400E32B5B /* Calendar */ = {
+		288E8C5922A7A9D400E32B5B /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				288E8C5C22A7AA1D00E32B5B /* CalendarViewController.swift */,
+				288E8C5C22A7AA1D00E32B5B /* MapTasksViewController.swift */,
 			);
-			path = Calendar;
+			path = Map;
 			sourceTree = "<group>";
 		};
 		288E8C5E22A7AD6200E32B5B /* Task details */ = {
@@ -329,7 +329,7 @@
 		28A8FA3922A3E06300693DD8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				288E8C5922A7A9D400E32B5B /* Calendar */,
+				288E8C5922A7A9D400E32B5B /* Map */,
 				2817A1F622A4071200C8FF31 /* Home */,
 				2817A1F422A4070900C8FF31 /* MainViewController.swift */,
 				2817A1F222A403E600C8FF31 /* MainViewController.storyboard */,
@@ -384,6 +384,7 @@
 				28A8FA1B22A2CECC00693DD8 /* Frameworks */,
 				28A8FA1C22A2CECC00693DD8 /* Resources */,
 				711FA09E620FD58A3B0A5DDE /* [CP] Embed Pods Frameworks */,
+				44730EC7381D8935B4AFB64B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -469,6 +470,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		44730EC7381D8935B4AFB64B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-plan-it-ios/Pods-plan-it-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-plan-it-ios/Pods-plan-it-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-plan-it-ios/Pods-plan-it-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		711FA09E620FD58A3B0A5DDE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,7 +517,7 @@
 				2806230322A42EFB0065788E /* APIManager.swift in Sources */,
 				288E8C6222A7AD9600E32B5B /* TaskDetailsViewController.swift in Sources */,
 				2817A1DB22A3E7CC00C8FF31 /* RootViewHandler.swift in Sources */,
-				288E8C5D22A7AA1D00E32B5B /* CalendarViewController.swift in Sources */,
+				288E8C5D22A7AA1D00E32B5B /* MapTasksViewController.swift in Sources */,
 				28A8FA3B22A3E0D800693DD8 /* SignUpViewHandler.swift in Sources */,
 				288E8C6522A7AFAB00E32B5B /* PriorityListViewController.swift in Sources */,
 				2817A1FD22A41EFB00C8FF31 /* SettingsViewHandler.swift in Sources */,

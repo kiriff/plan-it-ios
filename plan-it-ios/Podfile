@@ -17,5 +17,8 @@ target 'plan-it-ios' do
   pod 'Hero'
   pod 'SVProgressHUD'
   pod 'FSCalendar'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'GooglePlacesSearchController'
 
 end

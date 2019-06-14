@@ -32,7 +32,7 @@ class RootViewController: UIViewController {
         self.viewHandler.loginButton.hero.id = "auth.title.label"
         let vc = SignUpViewController.storyboardController(.login)
         vc.hero.isEnabled = true
-        vc.hero.modalAnimationType = .selectBy(presenting: .slide(direction: .left), dismissing: .zoomOut)
+        vc.hero.modalAnimationType = .fade
         self.present(vc, animated: true)
         
     }
@@ -42,7 +42,7 @@ class RootViewController: UIViewController {
         self.viewHandler.signUpButton.hero.id = "auth.title.label"
         let vc = SignUpViewController.storyboardController(.signUp)
         vc.hero.isEnabled = true
-        vc.hero.modalAnimationType = .selectBy(presenting: .slide(direction: .left), dismissing: .zoomOut)
+        vc.hero.modalAnimationType = .fade
         self.present(vc, animated: true)
     }
 }

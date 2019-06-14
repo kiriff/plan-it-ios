@@ -15,6 +15,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var complteButton: UIButton!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var mapImageView: UIImageView!
     
     func setup(_ task: Task) {
         nameLabel.text = task.name
@@ -48,6 +49,14 @@ class HomeTableViewCell: UITableViewCell {
         } else {
             complteButton.alpha = 0.2
         }
+        
+        if let address = task.address {
+            if address.lat != 0 && address.lon != 0 {
+                mapImageView.isHidden = false
+            } else {
+                mapImageView.isHidden = true
+            }
+        }
     }
 
     private func setPriority(_ priority: Priority) {
@@ -61,7 +70,9 @@ class HomeTableViewCell: UITableViewCell {
         categoryLabel.text = " \(category.name) "
         categoryLabel.rounded()
     }
+    
     @IBAction func completeButtonPressed(_ sender: UIButton) {
+        
     }
 }
 

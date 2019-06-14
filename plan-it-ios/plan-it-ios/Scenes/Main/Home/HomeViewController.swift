@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
         self.interactor.getTasks {
             self.viewHandler.tableView.reloadData()
             HUD.hide()
+            PIHaptic.success()
         }
         self.setupSearchController()
     }
@@ -78,10 +79,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = TaskDetailsViewController.storyboardController(task: self.interactor.tasks[indexPath.row]) { [weak self] (task) in
-            self?.interactor.updateTask(task, completion: {
-                
-            })
+        let task: Task!
+        if self.interactor.filteredTasks.isEmpty {
+            task = self.interactor.tasks[indexPath.row]
+        } else {
+            task = self.interactor.filteredTasks[indexPath.row]
+        }
+        let vc = TaskDetailsViewController.storyboardController(task: task) { [weak self] (task) in
+            self?.interactor.updateTask(task, completion: {})
         }
         self.storkPresent(vc, swipe: true, height: self.safeAreaHeight - 30)
     }

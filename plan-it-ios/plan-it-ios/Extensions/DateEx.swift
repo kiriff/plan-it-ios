@@ -26,7 +26,7 @@ extension Date {
     
     var formatted: String {
         let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.locale = Locale(identifier: "ru_RU")
+        dateFormatterPrint.locale = Locale(identifier: "en_US")
         dateFormatterPrint.dateFormat = "E, d MMM yyyy"
         
         return dateFormatterPrint.string(from: self)
@@ -34,7 +34,7 @@ extension Date {
     
     var formattedForMonth: String {
         let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.locale = Locale(identifier: "ru_RU")
+        dateFormatterPrint.locale = Locale(identifier: "en_US")
         dateFormatterPrint.dateFormat = "LLLL yyyy"
         
         return dateFormatterPrint.string(from: self)
